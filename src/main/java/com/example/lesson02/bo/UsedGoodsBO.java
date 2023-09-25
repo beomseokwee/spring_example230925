@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.lesson02.domain.UsedGoods;
 import com.example.lesson02.mapper.UsedGoodsMapper;
 
-@Service   // spring bean
+@Service  // spring bean
 public class UsedGoodsBO {
 	
 	@Autowired   // spring bean(객체) 가져오는 것 - DI(Dependency Injection)
