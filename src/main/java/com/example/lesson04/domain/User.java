@@ -3,7 +3,6 @@ package com.example.lesson04.domain;
 import java.util.Date;
 
 public class User {
-	
 	private int id;
 	private String name;
 	private String yyyymmdd;
@@ -11,6 +10,7 @@ public class User {
 	private String introduce;
 	private Date createdAt;
 	private Date updatedAt;
+	
 	public int getId() {
 		return id;
 	}
@@ -53,7 +53,4 @@ public class User {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
-	
-	
-
 }

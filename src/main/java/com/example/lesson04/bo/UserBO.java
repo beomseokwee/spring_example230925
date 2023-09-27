@@ -8,18 +8,20 @@ import com.example.lesson04.mapper.UserMapper;
 
 @Service
 public class UserBO {
-	//input : 컬럼들 4개
-	// output: X
-	
+
 	@Autowired
 	private UserMapper userMapper;
 	
-	public void addUser(String name, String yyyymmdd, String email, String introduce) {
-		
+	// input: 컬럼들 4개
+	// output: X
+	public void addUser(String name, String yyyymmdd, 
+			String email, String introduce) {
 		
 		userMapper.insertUser(name, yyyymmdd, email, introduce);
 	}
 	
+	// input: X
+	// output: User(최신 가입자 1명)
 	public User getLatestUser() {
 		return userMapper.selectLatestUser();
 	}
